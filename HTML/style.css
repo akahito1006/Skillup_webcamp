@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #ec715f;
+}
+
+.header-box {
+  width: 1024px;
+  height: 70px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header-box img {
+  width: auto;
+  height: 70px;
+  position: absolute;
+  left: 0;
+}
+
+nav {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+.nav-list-item {
+  margin: 0 30px;
+  line-height: 70px;
+  display: inline-block;
+}
+
+.nav-list-item a {
+  color: #fafafa;
+  font-size: 16px;
+}
+
+.main-visual-content {
+  width: 100%;
+  height: 650px;
+  background-image: url(img/mv.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.main-visual-name {
+  padding: 200px 0 10px;
+  font-size: 64px;
+  color: #fafafa;
+  text-align: center;
+}
+
+.main-visual-text {
+  font-size: 20px;
+  color: #fafafa;
+  text-align: center;
+}
+
+.main-content:nth-child(odd) {
+  background-color: #eceff1;
+}
+
+/* -------------------------------- */
+.main-portfolio {
+  padding: 90px 0;
+  background-color: #eceff1;
+}
+
+.main-content-name {
+  margin-bottom: 8px;
+  font-size: 32px;
+  color: #000000;
+  text-align: center;
+}
+
+.main-border {
+  width: 70px;
+  margin: 0 auto;
+  border-bottom: 3px solid #ec715f;
+}
+
+.main-content-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+}
+
+.main-content-image {
+  width: 920px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-box {
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-box:nth-child(n):nth-child(-n+3) {
+  margin-bottom: 10px;
+}
+
+.image-box:nth-child(3n+2) {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.image-box:nth-child(1) {
+  background-image: url(img/sketch.jpg);
+}
+
+.image-box:nth-child(2) {
+  background-image: url(img/websuku.png);
+}
+
+.image-box:nth-child(3) {
+  background-image: url(img/write.jpg);
+}
+
+.image-box:nth-child(4) {
+  background-image: url(img/webcamp.png);
+}
+
+.image-box:nth-child(5) {
+  background-image: url(img/talk.jpg);
+}
+
+.image-box:nth-child(6) {
+  background-image: url(img/webcamp-mother.png);
+}
+
+/* -------------------------------- */
+.main-feature {
+  margin: 0 auto;
+  padding: 90px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.main-content-strength{
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.strength-box {
+  width: 320px;
+}
+
+.strength-box:nth-child(2) {
+  margin: 0 10px;
+}
+.strength-box i {
+  font-size: 60px;
+}
+
+.strength-name {
+  margin: 10px 0;
+  color: #000000;
+  font-size: 20px;
+}
+
+.strength-text {
+  color: #000000;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* -------------------------------- */
+.main-profile {
+  margin: 0 auto;
+  padding: 90px 0;
+  background-color: #eceff1;
+  text-align: center;
+}
+
+.main-content-profile{
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile-box {
+  width: 512px;
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-image: url(img/my-icon.jpg)
+}
+
+.profile-name {
+  margin-bottom: 5px;
+  color: #000000;
+  font-size: 20px;
+  text-align: left;
+}
+
+.profile-text {
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 16px;
+  text-align: left;
+}
+
+.profile-skills {
+  color: #000000;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* -------------------------------- */
+.main-contact {
+  margin: 0 auto;
+  padding: 90px 0;
+  background-color: #eceff1;
+  text-align: center;
+}
+
+.main-content-contact {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-box {
+  width: 400px;
+}
+
+.mail-tel {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.contact-name {
+  margin-bottom: 5px;
+  color: #000000;
+  font-size: 20px;
+  text-align: left;
+}
+
+.contact-link {
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 16px;
+  text-align: left;
+}
+
+
+footer {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #ec715f;
+}
+
+.footer-text {
+  color: #eceff1;
+  font-size: 16px;
+}
