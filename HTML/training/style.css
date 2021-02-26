@@ -24,7 +24,7 @@ a {
 header {
   width: 100%;
   height: 70px;
-  background-color: #EC715F;
+  background-color: #ec715f;
 }
 
 .logo-image {
@@ -41,7 +41,7 @@ header {
   float: left;
   line-height: 70px;
   list-style: none;
-  color: #FAFAFA;
+  color: #fafafa;
   font-size: 16px;
 }
 
@@ -58,14 +58,14 @@ header {
 .mv-name {
   padding-top: 200px;
   text-align: center;
-  color: #FAFAFA;
+  color: #fafafa;
   font-size: 64px;
 }
 
 .mv-text {
   padding-top: 10px;
   text-align: center;
-  color: #FAFAFA;
+  color: #fafafa;
   font-size: 20px;
 }
 
@@ -73,7 +73,7 @@ header {
 
 #Portfolio {
   width: 100%;
-  background-color: #ECEFF1;
+  background-color: #eceff1;
 }
 
 .heading {
@@ -88,7 +88,7 @@ header {
   width: 70px;
   height: 3px;
   margin: 8px auto 0 auto;
-  background-color: #EC715F;
+  background-color: #ec715f;
   display: block;
 }
 
@@ -114,7 +114,7 @@ header {
   background-size: cover;
 }
 
-.production:nth-child(-n+3) {
+.production:nth-child(-n + 3) {
   margin-top: 0;
 }
 
@@ -139,7 +139,7 @@ header {
 }
 
 .bg-5 {
-  background-image: url(img/talk.jpg)
+  background-image: url(img/talk.jpg);
 }
 
 .bg-6 {
@@ -150,7 +150,7 @@ header {
 
 #Feature {
   width: 100%;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .strength-group {
@@ -166,11 +166,11 @@ header {
   float: left;
 }
 
-.strength:nth-child(3) {
+.strength:last-child {
   margin-right: 0;
 }
 
-.strength i {
+.strength .fas {
   font-size: 60px;
 }
 
@@ -190,7 +190,82 @@ header {
 
 #Profile {
   width: 100%;
-  background-color: #ECEFF1;
+  background-color: #eceff1;
+}
+
+.profile-group {
+  width: 1024px;
+  padding: 30px 0 90px 0;
+  margin: 0 auto;
+}
+
+.left-content {
+  width: 50%;
+  float: left;
+}
+
+.profile-icon {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-image: url(img/my-icon.jpg);
+}
+
+.right-content {
+  width: 50%;
+  float: right;
+}
+
+.desc-title {
+  margin: 20px 0 5px 0;
+  font-size: 20px;
+  color: #000000;
+}
+
+.desc-title:nth-child(1) {
+  margin-top: 0;
+}
+
+.desc-text {
+  font-size: 16px;
+  color: #000000;
+}
+
+/* Profile----------------------- */
+
+#Contact {
+  width: 100%;
+  background-color: #fafafa;
+}
+
+.contact-group {
+  width: 800px;
+  padding: 30px 0 90px 0;
+  margin: 0 auto;
+}
+
+.left-contact-content {
+  width: 130px;
+  margin: 0 auto;
+}
+
+.link-text {
+  text-decoration: underline;
+}
+
+.right-contact-content {
+  width: ;
+  margin: 0 auto;
+}
+
+.right-contact-content .fas {
+  font-size: 50px;
+  padding-right: 20px;
+}
+
+.right-contact-content .fas:last-child {
+  padding-right: 0;
 }
 
 /* footer----------------------- */
@@ -198,8 +273,7 @@ header {
 footer {
   width: 100%;
   height: 60px;
-  background-color: #EC715F;
-
+  background-color: #ec715f;
 }
 
 footer .copyright {
