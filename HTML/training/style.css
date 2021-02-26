@@ -8,6 +8,12 @@ a {
   text-decoration: none;
 }
 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .container-center {
   width: 1024px;
   margin: 0 auto;
@@ -138,6 +144,53 @@ header {
 
 .bg-6 {
   background-image: url(img/webcamp-mother.png);
+}
+
+/* Feature----------------------- */
+
+#Feature {
+  width: 100%;
+  background-color: #FAFAFA;
+}
+
+.strength-group {
+  width: 980px;
+  padding: 30px 0 90px 0;
+  margin: 0 auto;
+}
+
+.strength {
+  width: 320px;
+  margin-right: 10px;
+  text-align: center;
+  float: left;
+}
+
+.strength:nth-child(3) {
+  margin-right: 0;
+}
+
+.strength i {
+  font-size: 60px;
+}
+
+.strength-title {
+  padding: 10px 0;
+  font-size: 20px;
+  color: #000000;
+}
+
+.strength-notes {
+  font-size: 16px;
+  color: #000000;
+  text-align: left;
+}
+
+/* Profile----------------------- */
+
+#Profile {
+  width: 100%;
+  background-color: #ECEFF1;
 }
 
 /* footer----------------------- */
