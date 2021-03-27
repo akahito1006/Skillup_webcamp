@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useReducer } from "react";
 import "../App.css";
 import Header from "./Header";
 import Movie from "./Movie";
@@ -58,13 +58,13 @@ const App = () => {
       type: "SEARCH_MOVIES_REQUEST"
       });
 
-      fetch('https://www.omdbapi.com/?s=${searchValue}&apikey=4a3b711b')
+      fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=4a3b711b`)
       .then(response => response.json())
       .then(jsonResponse => {
         if (jsonResponse.Response === "True") {
         dispatch({
           type: "SEARCH_MOVIES_SUCCESS",
-          payload: jasonResponse.Search
+          payload: jsonResponse.Search
         });
         } else {
         dispatch({
@@ -77,7 +77,7 @@ const App = () => {
   
   const { movies, errorMessage, loading } = state;
 
-  retun (
+  return (
   <div className="App">
     <Header text="HOOKED" />
     <Search search={search} />
@@ -89,7 +89,7 @@ const App = () => {
         <div className="errorMessage">{errorMessage}</div>
       ) : (
         movies.map((movie, index) => (
-          <Movie key={'${index}-${movie.Title}'} movie={movie} />
+          <Movie key={`${index}-${movie.Title}`} movie={movie} />
         ))
       )}
     </div>
