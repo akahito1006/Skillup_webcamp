@@ -34,7 +34,7 @@
 ## 設計書
 - ER図 https://drive.google.com/file/d/1Lb3AdM18SshZO8zSxAaUlAxvGlnQMwxt/view?usp=sharing
 - テーブル定義書 https://docs.google.com/spreadsheets/d/10NYpav3j5D8E8zzRZNeLcWdJDtQHPfSWiGCEfyUaHsU/edit?usp=sharing
-- 画面設計（ワイヤーフレーム）
+- 画面設計（ワイヤーフレーム）<br>
 　管理者側　https://drive.google.com/file/d/1SZ4PfqTUqfBUmGMpMkR-SwckRSkzkH1S/view?usp=sharing<br>
   会員側　https://drive.google.com/file/d/1fM3_tKHoF-INVKeQaoIGbXekHjoXOZ_G/view?usp=sharing
 - アプリケーション詳細設計
