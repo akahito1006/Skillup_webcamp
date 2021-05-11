@@ -20,7 +20,7 @@ let weekdays = ['mon', 'tue', 'wed', 'thu', 'fri'];
 // }
 
 // if/else
-if(weekdays.length > 5){
+if (weekdays.length > 5) {
   console.log('土日はまだ？');
 } else {
   console.log('お疲れ！')
@@ -30,11 +30,11 @@ if(weekdays.length > 5){
 const test = (arg) => { //arg;引数
   // const test = function() {
   // ここに実行したい処理を書く
-    if(weekdays.length > arg){
-      console.log('土日はまだ？');
-    } else {
-      console.log('お疲れ！')
-    }
+  if (weekdays.length > arg) {
+    console.log('土日はまだ？');
+  } else {
+    console.log('お疲れ！')
+  }
 };
 // test(3);
 
@@ -63,3 +63,24 @@ document.getElementsByTagName('p')[0].addEventListener('click', () => {
   // 命令を書く
   window.alert('Hello World!')
 });
+
+// 分割代入（※配列）
+const sample = () => [() => console.log("a!"), () => window.alert('Hello World!')];
+
+const [a, b] = sample();
+
+a();  // a!が出力される
+
+
+function getRectArea(width, height) {
+  if (width > 0 && height > 0) {
+    return width * height;
+  }
+  return 0;
+}
+
+console.log(getRectArea(3, 4));
+// expected output: 12
+
+console.log(getRectArea(-3, 4));
+// expected output: 0
