@@ -115,6 +115,7 @@ const clickHandler = (e) => {
       // windowオブジェクトに終了、scoreと出題数を表示
 
 
+
 // ボタンをクリックしたら正誤判定
 let handleIndex = 0;
 while (handleIndex < buttonLength) {
@@ -123,3 +124,10 @@ while (handleIndex < buttonLength) {
   })
   handleIndex++;
 };
+
+console.log();
+// デバッグに使う
+
+// 変数　ボタンごとに正誤判定の仕組みを定義するため、ループ上限として変数を利用する。初期値0（最初のボタン）
+// ループ文　ボタン1つ1つにマウスクリックで発火する正誤判定の仕組みを定義している。これがないと反応するボタンが作られないということになる
+// 次のボタンを定義するため変数に1足す
