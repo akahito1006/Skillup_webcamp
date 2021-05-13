@@ -62,3 +62,13 @@ body {
 .typeFormWrapper {
   border-bottom: 1px solid gray;
 }
+
+.gauge {
+  height: 12px;
+  transition: all .3s ease;
+}
+
+.gaugeWrapper {
+  border: 1px solid;
+  height: 12px;
+}
