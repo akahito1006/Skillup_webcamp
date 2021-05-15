@@ -26,3 +26,5 @@ const app = Vue.createApp({
 })
 
 app.mount('#app')
+
+// 00:00 ~ 21:35
