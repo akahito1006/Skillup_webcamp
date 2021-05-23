@@ -1,7 +1,7 @@
 <template>
 <div class="container">
   <Header title="Task Tracker" />
-  <Tasks :tasks="tasks" />
+  <Tasks @delete-task="deleteTask" :tasks="tasks" />
 </div>
 </template>
 
@@ -18,6 +18,11 @@ export default {
   data() {
     return {
       tasks: []
+    }
+  },
+  methods: {
+    deleteTask(id) {
+      console.log('task', id)
     }
   },
   created() {
@@ -46,7 +51,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:width@300,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 * {
   box-sizing: border-box;
